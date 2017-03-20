@@ -12,23 +12,20 @@
 def grade(num_books, reads_books)
     if reads_books
         if num_books < 10 
-            puts "C"
+            "C"
         elsif num_books > 10
-            puts "B"
+            "B"
         else 
-            puts "A"
+            "A"
         end
     else
         if num_books < 10 
-            puts "D"
+            "D"
         elsif num_books > 10
-            puts "C"
+            "C"
         else 
-            puts "B"
+            "B"
         end
     end
 end
 
-grade(4,  false)  # => "D"
-grade(4,  true)   # => "C"
-grade(15, true)   # => "B"
